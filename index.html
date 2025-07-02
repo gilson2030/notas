@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Planilha de Notas - Ensino Médio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Planilha de Notas - Ensino Médio</h1>
+    <div class="turma-select">
+      <label for="turma">Selecione a turma:</label>
+      <select id="turma">
+        <option value="A">1º A</option>
+        <option value="B">1º B</option>
+        <option value="C">1º C</option>
+        <option value="D">1º D</option>
+        <option value="E">1º E</option>
+      </select>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Nº</th>
+          <th>Nome do Aluno</th>
+          <th>Média</th>
+        </tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table>
+  </div>
+  <!-- Firebase App (compat) -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
